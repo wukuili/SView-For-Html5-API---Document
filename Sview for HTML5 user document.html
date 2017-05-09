@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="SView, SView帮助, SView用户手册, SViewHelp">
+        <meta name="description" content="SViewHelp">
+        <meta name="author" content="SView">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <title>SView for HTML5 集成说明书</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="./css/docs.css" rel="stylesheet">
+        <link href="./css/custom.css" rel="stylesheet">
+        <link href="./css/headroom.css" rel="stylesheet">
+        <link href="./css/common.css" rel="stylesheet">
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/headroom.min.js"></script>
+		<script src="./js/common.js"></script>
+    </head>
+    
+    <body>
+        <div id="header" class="navbar navbar-inverse navbar-fixed-top animated slideDown" role="navigation" name="header">
+        </div>
+		
+		<div class="container theme-showcase">
+        <div class="jumbotron">
+            <div class="first-title">SView for HTML5 集成说明书</div>
+            <div class="head-title-content">以下内容为用户提供SView for HTML5 控件集成使用说明文档。</div>
+        </div>
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+					<!-- ----------------------文件目录-------------------- -->
+					<div class="bs-sidebar hidden-print affix-top" role="navigation">
+                        <ul class="nav bs-doc-sidenav">
+                           <li class="">
+                                <a href="#_Toc379904602">概述</a>
+                            </li>
+							<li class="">
+                                <a href="#_Toc379904701">集成准备</a>
+                                <ul class="nav">
+                                    <li class=""><a href="#_Toc379904731">集成环境</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#_Toc379904605">集成说明</a>
+                                <ul class="nav">
+                                    <li class=""><a href="#_Toc3799046734">具体步骤</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_Toc379904610">Demo使用说明</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9" role="main">
+                    <div class="bs-docs-section">
+					
+                        <!-- ----------------------概述-------------------------------- -->
+                        <div class="page-header">
+                            <div id="_Toc379904602" class="first-title">概述</div>
+                        </div>
+                        <div class="overview">
+                            SView for HTML5 控件提供三维模型基本的浏览、基本三维对象操作、动画播放、颜色设置等功能的实现接口，可实现基本的三维模型展示功能，以便于用户个性化定制属于自己的产品。
+                        </div>
+
+					    <div class="page-header">
+                            <div id="_Toc379904701" class="first-title">集成准备</div>
+                        </div>  
+                        <div class="overview">
+                            集成之前需要熟悉javascript、HTML语言及常用网页代码编辑软件，以便快速准确的集成相关功能界面。详细集成准备如下所示:
+                        </div>
+                            <!-- ----------------------集成环境-------------------------------- -->
+                            <div id="_Toc379904731" class="second-title">集成环境</div>
+                            <div class="inf-body col-md-10">
+                                SView for HTML5 开发库集成需要的环境：
+                                <ul>
+                                <li>开发环境：常用前端代码编辑器</li>
+                                <li>系统环境: macOS、Linux、windows</li>
+                                <li>运行环境: IE、edge、chorme、firefox等支持html5的浏览器</li>
+                                </ul>
+                            </div>
+
+                       <!-- ----------------------集成说明-------------------------------- -->
+                        <div class="page-header">
+                            <div id="_Toc379904605" class="first-title">集成说明</div>
+                        </div>
+                        <div class="overview">
+                            请按照下面步骤进行集成
+                        </div>
+                        <!------------------------集成说明------------------------- -->
+                        <div id="_Toc3799046734" class="second-title">具体步骤</div>
+                        <div class="inf-body col-md-10">
+                            <li>首先将demo中images、js、css、zfile文件夹放入项目文件指定位置处。<br></li>
+                            <li>在项目网页中引入css、js文件<br></li>
+                           <pre><code class="javascript">&lt;link href="css/bootstrap.css" rel="stylesheet" media="screen" &gt;
+&lt;link href="css/common.css" rel="stylesheet">
+&lt;link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css">
+&lt;script src="js/Detector.js">&lt;/script>
+&lt;script src="js/m3d_debug.js">&lt;/script>
+&lt;script src="js/jquery-3.1.0.min.js" type="text/javascript">&lt;/script>
+&lt;script src="js/sview.1.0.7.5.js" type="text/javascript">&lt;/script>
+&lt;script src="js/bootstrap.min.js" type="text/javascript">&lt;/script>
+&lt;script src="js/bootstrap-contextmenu.js">&lt;/script>//右键菜单
+&lt;script src="js/zTree/jquery.ztree.core-3.5.js">&lt;/script>
+&lt;script src="js/zTree/jquery.ztree.excheck-3.5.js">&lt;/script>
+&lt;script src="js/zTree/jquery.ztree.exedit-3.5.js">&lt;/script>
+&lt;script src="js/jszip/jszip.min.js">&lt;/script&lt;script src="js/jszip/jszip-utils.min.js">&lt;/script>
+</code></pre>
+                            <p>
+                               <li>在脚本中执行sview默认对象的初始化，如下代码所示</li>
+<pre><code>if (!Detector.webgl) {
+Detector.addGetWebGLMessage();
+}
+var sview0 = null;
+$(function() {
+sview0 = initSView("sview0");
+try {
+
+//参数1使用转换后的jsvl和bin文件的压缩包网址。
+//参数2说明是否为zip包
+//参数3为压缩包内的文件名称，可能与压缩包名不一致
+//参数4是文件格式
+//中文时需增加服务端utf-8路径配置。
+sview0.OpenRemote("zfile/R&H00007.zip", true, "", "obj");//单个文件
+//多个文件逻辑
+var urls = [
+];
+//打开多个文件
+//sview0.OpenRemotes(urls,"topAssembly"/*指定顶级的名称*/, "jsvl");
+} catch (e) {
+alert("无法正常打开，请检查原始模型是否正确或联系客服人员！");
+$("#jdzw").css("width", "100%");
+$("#jdz").html("<span style='color:red;'>无法正常打开，请检查原始模型是否正确或联系客服人员！</span>");
+}
+});
+</code></pre>
+                            </p>
+                            <p>
+                               <li>根据api文档中接口所示，用js或jquery进行所需功能的调用即可。具体可参考sview.***.js文件中示例。</li>
+                            </p>
+                        </div>
+
+                        <!-- ----------------------Demo说明-------------------------------- -->
+                        <div class="page-header">
+                            <div id="_Toc379904610" class="first-title">Demo使用说明</div>
+                        </div> 
+
+                           
+
+                        <div class="inf-body col-md-10">
+                            <li>找到mongoose-free-6.5.exe，运行此软件，开启web测试服务。</li>
+                            <p ><img src="images/user_manuel_01.png" width="476" height="337"></p>
+                          <li>
+
+                                进入demo.html 页面
+
+                          </li>
+                            <p><img src="images/user_manuel_02.png" width="641" height="490"></p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+      </div>
+     </div>
+
+	<!-- 以下为页脚部分 -->
+	<div id="footer"></div>
+</body>
+</html>

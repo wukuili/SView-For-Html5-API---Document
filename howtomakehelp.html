@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="SView, SView帮助, SView用户手册, SViewHelp">
+        <meta name="description" content="SViewHelp">
+        <meta name="author" content="SView">
+        <link rel="shortcut icon" href="./img/favicon.png">
+        <title>HTML版帮助手册编写规范</title>
+        <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="./css/docs.min.css" rel="stylesheet">
+        <link href="./css/patch.css" rel="stylesheet">
+        <link href="./css/custom.css" rel="stylesheet">
+        <link href="./css/headroom.css" rel="stylesheet">
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/docs.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/headroom.min.js"></script>
+        <script src="./js/common.js"></script>
+        <!--[if lt IE 9]>
+            <script src="js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+        <script src="js/ie-emulation-modes-warning.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div id="header" class="navbar navbar-inverse navbar-fixed-top animated slideDown" role="navigation" name="header"></div>
+        <div class="container">
+            <div class="jumbotron">
+                <h2>HTML版帮助手册编写规范</h2>
+                <p>该文档为用户提供Html帮助手册编写的规范和方法指导。</p>
+            </div>
+            <div class="container bs-docs-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- ----------------------文件目录-------------------- -->
+                        <nav class="bs-docs-sidebar hidden-print affix-top">
+                            <ul class="nav bs-doc-sidenav">
+                                <li>
+                                    <a href="#overview">概述</a>
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#aboutHtmlHelp">Html简介</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#layout">布局</a>
+									<ul class="nav">
+                                        <li class="">
+                                            <a href="#layout-layout">布局</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#style">风格</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#title">标题</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#maintext">正文</a>
+                                        </li>
+									</ul>
+								</li>
+
+									
+									<li>
+                                            <a href="#inline">内联元素</a>
+												<ul class="nav">
+													<li class="">
+														<a href="#inlinestrong">加粗</a>
+													</li>
+													<li class="">
+														<a href="#inlineem">斜体</a>
+													</li>
+													<li class="">
+														<a href="#inline-u">下划线</a>
+													</li>
+													<li class="">
+														<a href="#inline-del">删除线</a>
+													</li>
+												</ul>
+                                        </li>
+                                        <li>
+                                            <a href="#list">列表</a>
+												<ul class="nav">
+													<li>
+														<a href="#list-ul">无序列表</a>
+													</li>
+													<li>
+														<a href="#list-ol">有序列表</a>
+													</li>
+												</ul>
+                                        </li>
+                                        <li>
+                                            <a href="#code">代码</a>
+												<ul class="nav">
+													<li>
+														<a href="#code-inline">内联代码</a>
+													</li>
+													<li>
+														<a href="#code-block">代码块</a>
+													</li>
+													<li>
+														<a href="#code-kbd">用户输入</a>
+													</li>
+												</ul>
+                                        </li>
+                                        <li>
+                                            <a href="#table">表格</a>
+												<ul class="nav">
+													<li>
+														<a href="#table-bordered">带边框的表格</a>
+													</li>
+												</ul>
+                                        </li>
+										<li>
+                                            <a href="#image">图片</a>
+												<ul class="nav">
+													<li>
+														<a href="#image-responsive">响应式图片</a>
+													</li>
+												</ul>
+                                        </li>
+										<li>
+                                            <a href="#catalog">目录</a>
+											<ul class="nav">
+												<li>
+													<a href="#catalog-howto">目录编写方法</a>
+												</li>
+											</ul>
+                                        </li>
+										<li>
+                                            <a href="#active-context">动态嵌入的内容</a>
+											<ul class="nav">
+												<li>
+													<a href="#catalog-howto">目录编写方法</a>
+												</li>
+											</ul>
+                                        </li>
+										<li>
+                                            <a href="#notice">注意事项</a>
+											<ul class="nav">
+												<li>
+													<a href="#notice-noword">不推荐直接使用Word生成</a>
+												</li>
+											</ul>
+                                        </li>
+                                <li>
+                                    <a href="#89">技术支持</a>
+                                </li>
+                            </ul>
+                            <a class="back-to-top" href="#top">返回顶部</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="bs-docs-section">
+                            <!-- ----------------------概述到视图管理的内容-------------------- -->
+                            <!-- ----------------------概述-------------------------------- -->
+                            <div class="page-header">
+                                <h2 id="overview">概述</h2>
+                            </div>
+                            <h3 id="aboutHtmlHelp">HTML版帮助文档使用的技术：</h3>
+                            <ul>
+                                <li>
+                                    <div class="clearfix content-heading">
+                                        <img class="pull-left" width=60 height=60 id="image004" src="img/HTML5Logo.png" class="img-responsive center-block" alt="">
+                                        <p>
+                                            <strong>HTML5&nbsp;</strong>是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。目标是替换1999年所制定的HTML&nbsp;4.01和XHTML&nbsp;1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到匹配当代的网络需求。广义论及HTML5时，实际指的是包括HTML、CSS和JavaScript在内的一套技术组合。它希望能够减少网页浏览器对于需要插件的丰富性网络应用服务，例如：
+                                            <strong>Adobe&nbsp;Flash</strong>、
+                                            <strong>Microsoft&nbsp;Silverlight</strong>与
+                                            <strong>Oracle&nbsp;JavaFX</strong>的需求，并且提供更多能有效加强网络应用的标准集。</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="clearfix content-heading">
+                                        <img class="pull-left" width=50 height=50 id="image004" style="margin:10px" src="img/bootstraplogo.jpg" class="img-responsive center-block"
+                                        alt="">
+                                        <p>
+                                            <strong>Bootstrap&nbsp;</strong>是一个用于快速开发Web应用程序和网站的前端框架,基于 HTML、CSS、JAVASCRIPT 技术。最先由 Twitter 的 Mark&nbsp;Otto和Jacob&nbsp;Thornton开发的，并在2011年8月份在GitHub上开源发布，目前已开发至第4版，有9万个Star和4万多个Fork。Bootstrap实现了可以
+                                            <strong>响应式布局</strong>（responsive layouts）的栅格系统，可以适配不同屏幕尺寸的界面布局。同时，BootStrap支持以less或Sass语言提供的动态CSS层叠样式表，支持以变量、函数等高级样式表语法。</p>
+                                    </div>
+                                </li>
+                        </div>
+                        <!-- end docs-section-->
+                        <div class="bs-docs-section">
+                            <div class="page-header">
+                                <h2 id="layout">布局</h2>
+                            </div>
+                            <h3 id="layout-layout">布局</h3>
+                            <p>帮助文档左侧为目录栏，右侧为帮助文档内容。</p>
+                            
+                            <h3 id="style">风格</h3>
+                            <p>SView的相关系列产品采用统一的帮助风格：顶部为统一的导航栏，其下是当前帮助的标题和简介，之下左侧为菜单树，右侧为帮助内容。</p>
+                            <p>帮助采用统一的CSS样式，具体由css文件夹下的BootStrap和Doc等样式表来指定，自定义样式写在custom.css中。</p>
+                            <h3 id="title">标题</h3>
+                            <p>标题使用3种字体：</p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <strong>顶级标题</strong>，如文档最顶的标题格式，以及帮助文档中的章节标题，使用h2标记。</p>
+                                    <p>注：如果在文档章节标题中使用时，可加括入带有"page-header" class的div中，以显示一个单独一行的下划线。</li>
+                                <li>
+                                    <p>
+                                        <strong>中标题</strong>，如帮助文档中每章的子栏目标题，使用h3标记。</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>小标题</strong>，如帮助文档中的一章中子栏目的某一模块的标题，使用h4标记。</p>
+                                </li>
+                            </ol>
+                            <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h2>h2.大标题示例</h2>
+                                            </td>
+                                            <td class="type-info">Semibold 30px</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3>h3.中标题示例</h3>
+                                            </td>
+                                            <td class="type-info">Semibold 24px</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4>h4.小标题示例</h4>
+                                            </td>
+                                            <td class="type-info">Semibold 18px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+<span class="nt">&lt;h2&gt;</span>h2.大标题示例<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3.中标题示例 <span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4.小标题示例<span class="nt">&lt;/h4&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                            <h3 id="maintext">正文</h3>
+                            <p>Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予body元素和所有段落元素。另外，p（段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</p>
+                            <p>示例：todo</p>
+                            <h3 id="inline">内联元素</h3>
+                            <h4 id="inlinestrong">加粗</h4>
+                            <p>通过&lt;strong&gt;来改变文本的font-weight值，从而强调一段文字。</p>
+                            <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                                <p>这里是一段需要<strong>强调</strong>的文本。</p>
+                            </div>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+<span class="nt">&lt;p&gt;</span>这里是一段需要<span class="nt">&lt;strong&gt;</span>强调<span class="nt">&lt;/strong&gt;</span>的文本。<span class="nt">&lt;/p&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+
+
+                            <h4 id="inlineem">斜体</h4>
+                            <p>通过&lt;em&gt;标记来使用斜体修饰一段文字。</p>
+                            <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                                <p>这里是一段<em>斜体展示的文本</em>。</p>
+                            </div>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+<span class="nt">&lt;p&gt;</span>这里是一段<span class="nt">&lt;em&gt;</span>斜体展示的文本。<span class="nt">&lt;/em&gt;</span><span class="nt">&lt;/p&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+
+                            <h4 id="inline-u">下划线</h4>
+                            <p>为文本添加下划线，使用&lt;u&gt;标签。</p>
+                            <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                                <p>这里是一段<u>带下划线展示的文本</u>。</p>
+                            </div>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+<span class="nt">&lt;p&gt;</span>这里是一段<span class="nt">&lt;u&gt;</span>带下划线展示的文本<span class="nt">&lt;/u&gt;</span>。<span class="nt">&lt;/p&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+
+
+                            <h4 id="inline-del">删除线</h4>
+                            <p>为文本添加删除线，使用&lt;del&gt;标签。</p>
+                            <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                                <p>这里是一段<del>带删除线的文本</del>。</p>
+                            </div>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-html" data-lang="html">
+<span class="nt">&lt;p&gt;</span>这里是一段<span class="nt">&lt;del&gt;</span>带删除线的文本<span class="nt">&lt;/del&gt;</span>。<span class="nt">&lt;/p&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+
+                            <h3 id="list">列表</h3>
+                            <h4 id="list-ul">无序列表</h4>
+                            <p>排列顺序无关紧要的一列元素。</p>
+                            <div class="bs-example" data-example-id="simple-ul">
+								<ul>
+								  <li>Lorem ipsum dolor sit amet</li>
+								  <li>Consectetur adipiscing elit</li>
+								  <li>Integer molestie lorem at massa</li>
+								  <li>Facilisis in pretium nisl aliquet</li>
+								  <li>Nulla volutpat aliquam velit
+									<ul>
+									  <li>Phasellus iaculis neque</li>
+									  <li>Purus sodales ultricies</li>
+									  <li>Vestibulum laoreet porttitor sem</li>
+									  <li>Ac tristique libero volutpat at</li>
+									</ul>
+								  </li>
+								  <li>Faucibus porta lacus fringilla vel</li>
+								  <li>Aenean sit amet erat nunc</li>
+								  <li>Eget porttitor lorem</li>
+								</ul>
+							  </div>
+							<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+                            <h4 id="list-ol">有序列表</h4>
+                            <p>顺序至关重要的一组元素。</p>
+                            <div class="bs-example" data-example-id="simple-ol">
+    <ol>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit</li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ol>
+  </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+
+                            <h3 id="code">代码</h3>
+                            <h4 id="code-inline">内联代码</h4>
+                            <p>通过 <code>&lt;code&gt;</code> 标签包裹内联样式的代码片段。</p>
+                            <div class="bs-example" data-example-id="inline-code">
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.</code></pre></div>
+
+
+                            <h4 id="code-block">代码块</h4>
+                            <p>多行代码可以使用 <code>&lt;pre&gt;</code> 标签。为了正确的展示代码，注意将尖括号做转义处理。</p>
+                            <div class="bs-example" data-example-id="simple-pre">
+  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code></pre></div>
+
+                            <h4 id="code-kbd">用户输入</h4>
+                            <p>通过 <code>&lt;kbd&gt;</code> 标签标记用户通过键盘输入的内容。=</p>
+                            <div class="bs-example" data-example-id="simple-kbd">
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+  To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
+To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span></code></pre></div>
+
+                            <h3 id="table">表格</h3>
+                            <h4 id="table-bordered">带边框的表格</h4>
+                            <p>添加 <code>.table-bordered</code> 类为表格和其中的每个单元格增加边框。</p>
+                            <div class="bs-example" data-example-id="bordered-table">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+                            <h3 id="image">图片</h3>
+							<h4 id="image-responsive">响应式图片</h4>
+                            <p>在 Bootstrap 版本 3 中，通过为图片添加 <code>.img-responsive</code> 类可以让图片支持响应式布局。其实质是为图片设置了 <code>max-width: 100%;</code>、 <code>height: auto;</code> 和 <code>display: block;</code> 属性，从而让图片在其父元素中更好的缩放。</p>
+                            <p>如果需要让使用了 <code>.img-responsive</code> 类的图片水平居中，请使用 <code>.center-block</code> 类，不要用 <code>.text-center</code>。 </p>
+							<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></div>
+
+							<h3 id="catalog">目录</h3>
+							<h4 id="catalog-howto">目录编写方法</h4>
+                            <p>目录使用nav标记进行导航，指向主题的位置。</p>
+                            <div class="bs-example" data-example-id="simple-pre">
+                
+  <nav >
+<ul class="nav">
+	<li>
+		<a href="#fruit">水果</a>
+		<ul class="nav">
+			<li>
+				<a href="#watermelon">西瓜</a>
+			</li>
+			<li>
+				<a href="#apple">苹果</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#animal">动物</a>
+		<ul class="nav">
+			<li class="">
+				<a href="#cat">猫</a>
+			</li>
+			<li class="">
+				<a href="#rat">鼠</a>
+			</li>
+			<li class="">
+				<a href="#dog">狗</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+</nav>
+<div id="fruit">水果</div>
+<div id="watermelon">西瓜</div>
+<div id="apple">苹果</div>
+<div id="animal">动物</div>
+<div id="cat">猫</div>
+<div id="rat">鼠</div>
+<div id="dog">狗</div>
+
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;bs-docs-sidebar hidden-print affix-top&quot;&gt;
+&lt;ul class=&quot;nav bs-doc-sidenav&quot;&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#fruit&quot;&gt;水果&lt;/a&gt;
+		&lt;ul class=&quot;nav&quot;&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#watermelon&quot;&gt;西瓜&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#apple&quot;&gt;苹果&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#layout&quot;&gt;动物&lt;/a&gt;
+		&lt;ul class=&quot;nav&quot;&gt;
+			&lt;li class=&quot;&quot;&gt;
+				&lt;a href=&quot;#cat&quot;&gt;猫&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class=&quot;&quot;&gt;
+				&lt;a href=&quot;#rat&quot;&gt;鼠&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class=&quot;&quot;&gt;
+				&lt;a href=&quot;#dog&quot;&gt;狗&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;div id=&quot;fruit&quot;&gt;水果&lt;/div&gt;
+&lt;div id=&quot;watermelon&quot;&gt;西瓜&lt;/div&gt;
+&lt;div id=&quot;apple&quot;&gt;苹果&lt;/div&gt;
+&lt;div id=&quot;animal&quot;&gt;动物&lt;/div&gt;
+&lt;div id=&quot;cat&quot;&gt;猫&lt;/div&gt;
+&lt;div id=&quot;rat&quot;&gt;鼠&lt;/div&gt;
+&lt;div id=&quot;dog&quot;&gt;狗&lt;/div&gt;
+</code></pre></div>
+                            <h3 id="active-context">动态嵌入的html标记</h3>
+                            <p>页面代码中默认样式会有三处js脚本加载自动嵌入的标记：</p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <strong>顶部导航条</strong>：包含针对SView各版本，以及常用链接的导航。使用id="header"的div来作为顶部导航的加载位置。</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>支持信息文本</strong>：包含公司联系方式，微信公众号等。使用id="supportinfo"的div来作为顶部导航的加载位置。</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>页脚</strong>：包含公司版权信息及网站版本、备案信息等内容。使用id="footer"的div来作为顶部导航的加载位置。</p>
+                                </li>
+                            </ol>
+
+                            <h3 id="notice">注意事项</h3>
+							<h4 id="notice-noword">不推荐直接使用Word生成的Html代码</h4>
+							<p>显示的文本：</p>
+							<div class="bs-example" data-example-id="aa">
+<p><strong>target_user_id</strong>:需要查询的用户<strong>id</strong>，为空时默认查询<strong>online_id</strong>对应的用户信息</p>
+</div>
+<p>Word直接生成的代码：</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=MsoListParagraph style=&#x27;margin-left:32.95pt;mso-para-margin-left:3.14gd;
+text-indent:9.05pt;mso-char-indent-count:0&#x27;&gt;&lt;span class=SpellE&gt;&lt;b
+style=&#x27;mso-bidi-font-weight:normal&#x27;&gt;&lt;span lang=EN-US style=&#x27;mso-bidi-font-size:
+10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast&#x27;&gt;target_user_id&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;span
+lang=EN-US style=&#x27;mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast&#x27;&gt;:&lt;/span&gt;&lt;span style=&#x27;mso-bidi-font-size:
+10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast&#x27;&gt;需要查询的用户&lt;b
+style=&#x27;mso-bidi-font-weight:normal&#x27;&gt;&lt;span lang=EN-US&gt;id&lt;/span&gt;&lt;/b&gt;，为空时默认查询&lt;span
+class=SpellE&gt;&lt;b style=&#x27;mso-bidi-font-weight:normal&#x27;&gt;&lt;span lang=EN-US&gt;online_id&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;对应的用户信息。&lt;span
+lang=EN-US&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</code></pre></div>
+
+<p>正常的代码：</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;&lt;strong&gt;target_user_id&lt;/strong&gt;:需要查询的用户&lt;strong&gt;id&lt;/strong&gt;，为空时默认查询&lt;strong&gt;online_id&lt;/strong&gt;对应的用户信息&lt;/p&gt;</code></pre></div>
+
+
+
+							<p>Word生成的代码繁多冗余，不建议使用。如有大量的Word文档需要转换为Html帮助文档，请使用<strong>CKEditor</strong>编辑器(<a href="./tools/ckeditor/samples/index.html" target="_blank">链接</a>)，将Word文档粘贴到此编辑器中，其会自动清除Word样式，保留Html基本样式。再经过格式调整和图片、链接修复之后，将Html文档源码拷贝到Html帮助页中相应位置。</p>
+
+                        </div>
+
+<!-- 						<h4 id="loc2.7">后期将引入MarkDown语法编写文档。</h4> -->
+<!-- 						<p>使用了样式表的html页面编写速度还可以，但有一种更迅速的方法是MarkDown语法。后期我们会引入MarkDown语法进行文档编写，以及生成器生成为符合规范的html。</p> -->
+
+						<!-- 技术支持 -->
+						<div id="supportinfo"></div>
+                        <!-- end docs-section-->
+                    </div>
+
+                    <!-- end row>-->
+                </div>
+            </div>
+            <!-- 以下为页脚部分 -->
+            <div id="footer"></div>
+    </body>
+
+</html>

@@ -1,0 +1,1790 @@
+{
+  "table": [
+
+    {
+      "tr": [
+        {
+          "name": "基本操作",
+          "href":"_Toc379904605",
+          "rowspan": "20"
+        },
+        {
+          "name": "设置是否持续旋转",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.SelectionOperator",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c1'>selectionOperator.ContinuousRotation()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "要先创建M3D.SelectionOperator实例selectionOperator。第一次调用时开启，第二次关闭，注意添加标志位控制",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "打开Url文件",
+          "rowspan": "0"
+        },
+        {
+          "name": "Sview",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c2'>OpenRemote(url路径,true,,jsvl);</a>",
+          "rowspan": "0",
+          "parament":[
+            {
+              "name":"url路径",
+              "isNecessary":"是",
+              "des":"文件路径"
+            },
+            {
+              "name":"true",
+              "isNecessary":"是",
+              "des":"是否为zip包"
+            },
+            {
+              "name":"文件名称",
+              "isNecessary":"否",
+              "des":"压缩包内的文件名称，可能与压缩包名不一致，如果为空，则使用第一个找到的jsvl文件作为默认文件"
+            },
+            {
+              "name":"jsvl",
+              "isNecessary":"是",
+              "des":"文件格式"
+            }
+          ]
+        },
+        {
+          "name": "参数1使用转换后的jsvl和bin文件的压缩包网址。<br>参数2说明是否为zip包<br> 参数3为压缩包内的文件名称，可能与压缩包名不一致，如果为空，则使用第一个找到的jsvl文件作为默认文件<br>参数4是文件格式",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取选中的模型对象",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c3'>GetSelector().Get()</a>",
+          "rowspan": "0",
+          "return":"选择器"
+        },
+        {
+          "name": "返回Model对象",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取指定模型的pathId",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c4'>GetSVLPath()</a>",
+          "rowspan": "0",
+          "return":"模型PATHId"
+        },
+        {
+          "name": "返回pathId，如PATH|0|4d|6",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "根据模型pathId找到相应的模型",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c5'>GetModelBySVLPath(svlPath)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"svlPath",
+            "isNecessary":"是",
+            "des":"模型pathId"
+          }],
+          "return":"模型对象"
+        },
+        {
+          "name": "svlPath:模型pathId;返回对应的模型对象",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "控制模型显隐",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c6'>SetVisible(boolean)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"boolean",
+            "isNecessary":"是",
+            "des":"若为true,则显示模型；若为false,则隐藏模型"
+          }]
+        },
+        {
+          "name": "参数类型为布尔值，若为true,则显示模型；若为false,则隐藏模型",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "选中的模型居中显示",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c7'>FoucusViewByModel(Model[],boolean)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"Model[]",
+            "isNecessary":"是",
+            "des":"模型列表数组"
+          },
+            {
+              "name":"boolean",
+              "isNecessary":"是",
+              "des":"true显示过渡动画"
+            }
+          ]
+        },
+        {
+          "name": "参数Model[]:模型列表数组，boolean:true显示过渡动画",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置投影方式",
+          "rowspan": "0"
+        },
+        {
+          "name": "View",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c8'>SetCameraProjectionType(projectionType)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"projectionType",
+            "isNecessary":"是",
+            "des":"投影类型为1或0"
+          }]
+        },
+        {
+          "name": "projectionType:投影类型为1或0",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取投影方式",
+          "rowspan": "0"
+        },
+        {
+          "name": "View",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c9'>GetCameraProjectionType()</a>",
+          "rowspan": "0",
+          "return":"CameraProjectionType（投影方式）"
+        },
+        {
+          "name": "获取目前的投影方式返回数字",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取模型透明度",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c10'>GetAlpha()</a>",
+          "rowspan": "0",
+          "return":"模型透明度"
+        },
+        {
+          "name": "获取指定模型的透明度",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "得到选择器",
+          "rowspan": "0"
+        },
+        {
+          "name": "Sview",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c11'>SelectorGetSelector ()</a>",
+          "rowspan": "0",
+          "return":"选择器对象"
+        },
+        {
+          "name": "获取选择器",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "模型复位",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c12'>RestoreView()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "复位View，将显示的模型恢复成最初加载状态",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置模型的可见性",
+          "rowspan": "0"
+        },
+        {
+          "name": "Shape",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c13'>SetVisible(boolean)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"boolean",
+            "isNecessary":"是",
+            "des":"true:可见；false:不可见"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置显示线框和模型",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c14'>IsShowWireframe()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "显示线框和模型",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置显示网格",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c15'>IsOnlyShowWireframe()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "只显示线框",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置模型默认方向",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c16'>SetPerspective(type:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"type",
+            "isNecessary":"是",
+            "des":"0前视图；1 后视图； 2 左视图；3 右视图；4 仰视图 ；5 俯视图；6 轴测图；7 默认视图"
+          }]
+
+        },
+        {
+          "name": "0前视图；1 后视图； 2 左视图；3 右视图；4 仰视图 ；5 俯视图；6 轴测图；7 默认视图；",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置场景模式",
+          "rowspan": "0"
+        },
+        {
+          "name": "View",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c17'>SetUsingTouchHandlerType(mode:number)</a>",
+          "rowspan": "0"
+        ,
+          "parament":[{
+            "name":"mode",
+            "isNecessary":"是",
+            "des":"0表示漫游模式、1表示平行投影、3表示模型移动旋转变形模式"
+          }]
+        },
+        {
+          "name": "0表示漫游模式、1表示平行投影、3表示模型移动旋转变形模式",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置是否开启剖切",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c18'>IsShowCappingPlane()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "是否开启剖切",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置是否开启剖切辅助面",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c19'>IsShowClipHelppingPlane()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "是否开启剖切辅助面",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置背景颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c20'>SetBackgroundColor(colorTop,colorBottom)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"colorTop",
+            "isNecessary":"是",
+            "des":" 设置上部颜色"
+          },
+            {
+              "name":"colorBottom",
+              "isNecessary":"是",
+              "des":" 设置下部颜色"
+            }]
+        },
+        {
+          "name": "colorTop:类型 M3D.Color 设置上部颜色；colorBottom:类型 M3D.Color 设置下部颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "漫游",
+          "href":"_Toc379904663",
+          "rowspan": "10"
+        },
+        {
+          "name": "设置漫游速度",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c21'>SetWalkingSpeed(number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"number",
+            "isNecessary":"是",
+            "des":"漫游速度"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取漫游速度",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c22'>GetFirstPersionParameter()</a>",
+          "rowspan": "0",
+          "return":"漫游速度"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "开始虚拟摇杆",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c23'>StartJoystick()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "为了控制虚拟摇杆刷新频率，通过定时器开启",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "结束虚拟摇杆",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c24'>EndJoystick()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置视野大小",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c25'>SetCameraFov(fov:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "fov":"fov",
+            "isNecessary":"是",
+            "des":"设置视野大小"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取视野大小",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c26'>GetCameraFov()</a>",
+          "rowspan": "0",
+          "return":"相机视野大小"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "前后移动",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c27'>MoveStraight(speed:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"speed",
+            "isNecessary":"是",
+            "des":"漫游速度"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "左右平移",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c28'>MoveSideways(speed:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"speed",
+            "isNecessary":"是",
+            "des":"平移速度"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "上下旋转",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c90'>RotateUpAndDownAngle(rotateAngle:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"rotateAngle",
+            "isNecessary":"是",
+            "des":"旋转角度"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "左右旋转",
+          "rowspan": "0"
+        },
+        {
+          "name": "WalkThroughManager",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c29'>RotateSidewaysAngle(rotateAngle:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"rotateAngle",
+            "isNecessary":"是",
+            "des":"旋转角度"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "剖视",
+          "href":"_Toc379904637",
+          "rowspan": "6"
+        },
+        {
+          "name": "设置是否显示剖切面",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c30'>IsShowClipHelppingPlane()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "设置是否开启剖切辅助面",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置剖切方向",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c31'>SetClipDirection(direction:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"direction",
+            "isNecessary":"是",
+            "des":"剖切方向"
+          }]
+        },
+        {
+          "name": "direction:1:X;2:Y;3:Z;<br>",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置剖切相反方向",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c32'>SetOppositeDir()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "<br>",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置剖切值",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c33'>SetClipValue(vlaue:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"vlaue",
+            "isNecessary":"是",
+            "des":"剖切值"
+          }]
+        },
+        {
+          "name": "范围[0,1]",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置是否显示盖面",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c34'>IsShowCappingPlane()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "关闭剖切",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c35'>CloseClipPlane()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "爆炸",
+          "href":"_Toc379904638",
+          "rowspan": "4"
+        },
+        {
+          "name": "显示爆炸图",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c36'>SetExplosive(style:number,percentage:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"style",
+            "isNecessary":"是",
+            "des":"1:中心爆炸;2:X;3:Y;"
+          },
+            {
+              "name":"percentage",
+              "isNecessary":"是",
+              "des":"爆炸比例"
+            }]
+        },
+        {
+          "name": "style:1:中心爆炸;2:X;3:Y;爆炸比例",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "清除爆炸图",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c37'>ClearExplosive()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置爆炸百分比",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c38'>SetExplosivePersentage(percentage:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"percentage",
+            "isNecessary":"是",
+            "des":"爆炸百分比"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置爆炸模式",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c39'>SetExplosiveStyle(style:number)</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"style",
+            "isNecessary":"是",
+            "des":"1:中心爆炸;2:X;3:Y;"
+          }]
+        },
+        {
+          "name": "style:1:中心爆炸;2:X;3:Y;",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "监听",
+          "href":"_Toc379904639",
+          "rowspan": "4"
+        },
+        {
+          "name": "添加选择监听",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c40'>AddSelectListener(listener:SViewSelctorListener): boolean</a>",
+          "rowspan": "0" ,
+          "parament":[{
+            "name":"listener",
+            "isNecessary":"是",
+            "des":"监听器"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "移除选择监听",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c41'>RemoveSelectListener(listener:SViewSelctorListener): boolean</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"listener",
+            "isNecessary":"是",
+            "des":"监听器"
+          }]
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "添加读取监听",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c42'>AddReadListener(listener:SViewReadListener): boolean</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"listener",
+            "isNecessary":"是",
+            "des":"监听器"
+          }],
+          "return":"boolen"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "移除读取监听",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c43'>RemoveReadListener(listener:SViewReadListener): boolean</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"listener",
+            "isNecessary":"是",
+            "des":"监听器"
+          }],
+          "return":"boolen"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "拖拽器",
+          "href":"_Toc379904640",
+          "rowspan": "2"
+        },
+        {
+          "name": "设置拖拽模式",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c44'>SetDraggerMode(mode:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"mode",
+            "isNecessary":"是",
+            "des":"0表示平移；1表示旋转；2表示缩放"
+          }],
+          "return":""
+        },
+        {
+          "name": "0表示平移；1表示旋转；2表示缩放",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置拖拽轴",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c45'>SetDraggerAxis(axis:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"axis",
+            "isNecessary":"是",
+            "des":"0表示X轴；1表示Y轴；2表示Z轴；3:表示沿整体"
+          }],
+          "return":""
+        },
+        {
+          "name": "0表示X轴；1表示Y轴；2表示Z轴；3:表示沿整体",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "装配树",
+          "href":"_Toc379904641",
+          "rowspan": "1"
+        },
+        {
+          "name": "获取模型装配树的json串",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c46'>JSONAssembly(topModel:Model)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"topModel",
+            "isNecessary":"是",
+            "des":"顶级model对象"
+          }],
+          "return":""
+        },
+        {
+          "name": "示例：var modeljson = new SView.JSONAssembly(topModel);<br>topmodel: 当前打开的模型对象",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "视图",
+          "href":"_Toc379904642",
+          "rowspan": "4"
+        },
+        {
+          "name": "添加新的视图",
+          "rowspan": "0"
+        },
+        {
+          "name": "View",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c47'>AddModelView()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "将视图对象转换成xml字符串并返回",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c48'>GetXMLStrByMV(modleView:M3D.ModleView)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"modleView",
+            "isNecessary":"是",
+            "des":"视图对象"
+          }],
+          "return":"xml格式字符串"
+        },
+        {
+          "name": "参数：modleView为视图对象",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "根据xml字符串创建新的视图",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c49'>CreatModleViewByXMlStr(xmlStr:string)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"xmlStr",
+            "isNecessary":"是",
+            "des":"xml字符串"
+          }],
+          "return":"ModelView对象"
+        },
+        {
+          "name": "xmlStr：xml格式的字符串",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取模型视图列表",
+          "rowspan": "0"
+        },
+        {
+          "name": "View",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c50'>GetModelViewsList()</a>",
+          "rowspan": "0",
+          "return":"获取modelView列表"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "颜色",
+          "href":"_Toc379904666",
+          "rowspan": "4"
+        },
+        {
+          "name": "设置指定模型颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c51'>SetColor(color)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"color",
+            "isNecessary":"是",
+            "des":"color对象"
+          }],
+          "return":""
+        },
+        {
+          "name": "color:类型M3D.Color",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取指定模型颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c52'>GetColor()</a>",
+          "rowspan": "0",
+
+          "return":"color对象"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "初始化颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c53'>ResetColor()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "将模型颜色恢复到初始值",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置模型选取之后高亮的颜色",
+          "rowspan": "0"
+        },
+        {
+          "name": "Model",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c54'>SetSelectColor(color:Color)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"color",
+            "isNecessary":"是",
+            "des":"M3D.Color对象"
+          }],
+          "return":""
+        },
+        {
+          "name": "color 类型M3D.Color",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "动画",
+          "href":"_Toc379904643",
+          "rowspan": "19"
+        },
+        {
+          "name": "获取动画播放器",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c55'>GetAnimationPlayer()</a>",
+          "rowspan": "0",
+          "return":"animationPlayer对象"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "开启展示功能",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c56'>StartRotateAndExplosive()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "边旋转边爆炸的一种动画",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "关闭展示功能",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c57'>EndRotateAndExplosive()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置展示旋转速度",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c58'>SetRotateSpeed(speed:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"speed",
+            "isNecessary":"是",
+            "des":"旋转速度"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "播放所有动画",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c59'>Play()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "暂停动画",
+          "rowspan": "0"
+        },
+        {
+          "name": "SView",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c60'>Pause()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "停止动画",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c61'>StopPlayer()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "sview.animationPlayer.StopPlayer()",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "播放当前过程",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c62'>Play(activePos:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"activePos",
+            "isNecessary":"是",
+            "des":"需要播放的步骤"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "后退",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c63'>PlayPre()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "快进",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c64'>PlayNext()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "播放剩余所有",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c65'>PlayNextAll()</a>",
+          "rowspan": "0"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置播放速度",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c66'>SetSpeed(speed:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"speed",
+            "isNecessary":"是",
+            "des":"播放速度"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取播放速度",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c67'>GetSpeed()</a>",
+          "rowspan": "0",
+          "return":"播放速度"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置是否自动漫游",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c68'>SetAutoWalkCamera(autoWalkCamera:boolean)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"autoWalkCamera",
+            "isNecessary":"是",
+            "des":"是否自动漫游"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "查看是否为自动漫游",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c69'>GetAutoWalkCamera()</a>",
+          "rowspan": "0",
+          "return":"获取是否自动漫游"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置播放进度",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c70'>SetPercent(percent:number)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"percent",
+            "isNecessary":"是",
+            "des":"播放进度"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取播放进度",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c71'>GetPercent()</a>",
+          "rowspan": "0",
+          "return":"播放进度"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "获取当前动画过程",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c72'>GetActiveTask()</a>",
+          "rowspan": "0",
+          "return":"获取当前激活的任务"
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    },
+    {
+      "tr": [
+        {
+          "name": "设置是否循环",
+          "rowspan": "0"
+        },
+        {
+          "name": "M3D.AnimationPlayer",
+          "rowspan": "0"
+        },
+        {
+          "name": "<a href='#c73'>SetLoop(isLoop:boolean)</a>",
+          "rowspan": "0",
+          "parament":[{
+            "name":"isLoop",
+            "isNecessary":"是",
+            "des":"true:循环；false:不循环"
+          }],
+          "return":""
+        },
+        {
+          "name": "",
+          "rowspan": "0"
+        }
+      ]
+    }
+  ]
+}

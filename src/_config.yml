@@ -1,0 +1,7 @@
+
+
+encoding: utf-8
+highlighter: rouge
+highlighter: pygments
+
+chcp 65001

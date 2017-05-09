@@ -1,0 +1,79 @@
+
+th{
+	text-align: center
+}
+.table{
+	margin-top:5px;
+	margin-bottom:5px
+}
+.table tbody tr td{
+	vertical-align:middle
+}
+ul{	
+	padding-left:2em;
+	font-size:15px;
+	line-height: 1.7;
+	text-indent:0;
+}
+.head-title-content{    
+    font-size: 21px;
+    font-weight: 200;	
+	display: block;    
+}
+/***************一级标题*********************/
+.first-title{
+    font-size: 30px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+	font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+	box-sizing: border-box;
+	display: block;	
+	clear:both
+}
+.second-title{
+	font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+	font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+	box-sizing: border-box;
+	display: block;	
+	clear:both
+}
+/***************概述*********************/
+.overview{
+	font-size:15px;
+	text-indent:2em;
+	line-height: 1.7
+}
+/***************API文档接口详情*********************/
+.inf-body{
+	margin-left:30px;	
+	font-size: 15px;
+	line-height: 1.7;
+    font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+	margin-bottom: 10px;
+}
+.inf-title{
+	font-weight: 700;
+}
+.inf-pre{
+	padding:5px 10px;	
+	white-space:pre-wrap
+}
+/***************注意事项*********************/
+.warn{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    border-radius: 4px;
+	
+}
+.red{
+    color: #c7254e;
+}
